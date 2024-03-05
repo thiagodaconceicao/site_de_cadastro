@@ -2,5 +2,23 @@ version: '3.8'
 
 services:
   
-  nginx:
-    image: nginx:latest
+  db:
+    image: postgres:latest
+    container_name: postgres
+    environment:
+      POSTGRES_USER: exemplo
+      POSTGRES_PASSWORD: exemplo
+      POSTGRES_DB: exemplo
+
+    network_mode: host
+
+  admin:
+
+    image: dpage/pgadmin4
+    container_name: pgAdmin4
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: exemplo
+      PGADMIN_DEFAULT_PASSWORD: exemplo
+
+    network_mode: host 
