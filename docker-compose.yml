@@ -3,13 +3,13 @@ version: '3.8'
 services:
   
   db:
-    image: postgres:latest
+    build:
+      dockerfile: Dockerfiles/postgres.Dockerfile
     container_name: postgres
     environment:
-      POSTGRES_USER: exemplo
-      POSTGRES_PASSWORD: exemplo
-      POSTGRES_DB: exemplo
-
+      POSTGRES_USER: test
+      POSTGRES_PASSWORD: 12345
+      POSTGRES_DB: Users
     network_mode: host
 
   admin:
@@ -18,7 +18,10 @@ services:
     container_name: pgAdmin4
     restart: always
     environment:
-      PGADMIN_DEFAULT_EMAIL: exemplo
-      PGADMIN_DEFAULT_PASSWORD: exemplo
+      PGADMIN_DEFAULT_EMAIL: teste@gmail.com
+      PGADMIN_DEFAULT_PASSWORD: 12345
 
     network_mode: host 
+
+    depends_on:
+     - db
