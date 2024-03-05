@@ -1,3 +1,6 @@
 .git
 *.md
 node_mdoules
+*.sql
+Dockerfiles
+nginx.conf
