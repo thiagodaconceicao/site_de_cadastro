@@ -3,7 +3,8 @@
 <head>
   <title>Página de Cadastro</title>
   <link rel="stylesheet" href="../css/file.css">
-  <script src="../javascript/postgres.javascript" defer></script>
+  <script src="../javascript/postgres.javascript"></script>
+  <script src="../javascript/GetUser.javascript"></script>
 </head>
 <body>
 
@@ -14,13 +15,15 @@
     <p>Prencha o Campo para Criar uma conta</p>
     <hr>
 
+    <form id="registrationForm">
       <label for="email"><b>Email</b></label>
       <input type="text" placeholder="Colocar email" name="email" id="email" required>
 
-      <label for="psw"><b>Senha</b></label>
+      <label for="password"><b>Senha</b></label>
       <input type="password" placeholder="Colocar senha" name="password" id="password" required>
 
-      <button type="submit" class="registerbtn">Register</button>
+      <button type="submit" class="registerbtn">Registrar</button>
+    </form>
   </div>
 
 </body>

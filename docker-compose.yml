@@ -2,16 +2,16 @@ version: '3.8'
 
 services:
   
-  #db:
-  #build:
-      #dockerfile: Dockerfiles/postgres.Dockerfile
-      #context: .
-      #container_name: postgres
-      #environment:
-      #POSTGRES_USER: test
-      #POSTGRES_PASSWORD: 12345
-      #POSTGRES_DB: Users
-      #network_mode: host
+  db:
+    build:
+      dockerfile: Dockerfiles/postgres.Dockerfile
+      context: .
+    container_name: postgres
+    environment:
+      POSTGRES_USER: test
+      POSTGRES_PASSWORD: 12345
+      POSTGRES_DB: Users
+    network_mode: host
 
   admin:
 
@@ -25,7 +25,7 @@ services:
     network_mode: host 
 
   
-  proxy_reverse:
+  nginx:
 
     build:
       dockerfile: Dockerfiles/nginx.Dockerfile
@@ -34,10 +34,10 @@ services:
     restart: always
 
     ports:
-      - 5050:80
+    - 5050:80
 
     volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf
+    - ./nginx.conf:/etc/nginx/nginx.conf
 
   ngrok:
     image: ngrok/ngrok:latest
@@ -47,8 +47,8 @@ services:
     - "--config"
     - "/etc/ngrok.yml"
     volumes:
-      - ./ngrok.yml:/etc/ngrok.yml
+    - ./ngrok.yml:/etc/ngrok.yml
     network_mode: host
 
     depends_on:
-      - proxy_reverse
+    - nginx

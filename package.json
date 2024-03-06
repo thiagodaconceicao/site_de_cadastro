@@ -2,5 +2,17 @@
   "dependencies": {
     "express": "^4.18.3",
     "pg": "^8.11.3"
-  }
+  },
+  "name": "node_and_postgres",
+  "description": "Site de cadastro ligado ao banco de dados.",
+  "version": "1.0.0",
+  "main": "postgres.javascript",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "node ./javascript/postgres.js"
+  },
+  "author": "Thiago",
+  "license": "ISC"
 }
