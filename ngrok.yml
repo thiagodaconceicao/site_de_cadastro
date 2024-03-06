@@ -1,0 +1,9 @@
+version: '2'
+
+authtoken: example
+
+web_addr: 0.0.0.0:4040
+tunnels:
+  site:
+    addr: 5050
+    protocol: http
