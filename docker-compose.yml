@@ -1,0 +1,13 @@
+
+services:
+    
+    python:
+      build:
+        context: .
+
+      network_mode: host
+
+
+    ngrok:
+      image: ngrok/ngrok
+
