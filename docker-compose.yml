@@ -19,3 +19,6 @@ services:
         - ./ngrok.yml:/etc/ngrok.yml
 
       network_mode: host
+
+      depends_on:
+        - python
