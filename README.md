@@ -39,3 +39,5 @@ em Powershell (Windows)
 ```
 set DJANGO_SETTINGS_MODULE=projeto_cad_usu.custom_settings.settings-postgres
 ```
+## Docker
+descomente e/ou edite a variavel env do dockerfile
