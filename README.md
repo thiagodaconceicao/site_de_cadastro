@@ -28,6 +28,7 @@ Depois vai no seu navegador e coloque
 ```
 localhost:8000
 ```
+OBS: recomendo instalar em ambientes virtuais isolados
 # Configurações diferentes
 ## PostgreSQL
 em BASH/ZSH (Linux)
