@@ -32,7 +32,7 @@ services:
         POSTGRES_PASSWORD: teste1234
         POSTGRES_DB: teste
 
-      network_mode: 
+      network_mode: host 
 
     postgres-gui:
       image: dpage/pgadmin4
