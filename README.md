@@ -31,7 +31,7 @@ localhost:8000
 OBS: recomendo instalar em ambientes virtuais isolados
 # Configurações diferentes
 ## PostgreSQL
-em BASH/ZSH (Linux)
+Em BASH/ZSH (Linux)
 ```
 export DJANGO_SETTINGS_MODULE=projeto_cad_usu.custom_settings.settings-postgres
 ```
@@ -39,5 +39,6 @@ em Powershell (Windows)
 ```
 set DJANGO_SETTINGS_MODULE=projeto_cad_usu.custom_settings.settings-postgres
 ```
-## Docker
-descomente e/ou edite a variavel env do dockerfile
+### Postgres no Docker
+Descomente a variavel *ENV* do dockerfile e o *RUN* e comente a outra, depois vá no docker-compose.yml e descomente o serviço postgres e edite como conforme desejar.
+Descomente o postgres-gui se quiser usar o pgAdmin4 para configurar/ver as tabelas via interface gráfica
