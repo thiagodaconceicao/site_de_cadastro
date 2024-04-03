@@ -28,3 +28,16 @@ Depois vai no seu navegador e coloque
 ```
 localhost:8000
 ```
+OBS: recomendo instalar em ambientes virtuais isolados
+# Configurações diferentes
+## PostgreSQL
+em BASH/ZSH (Linux)
+```
+export DJANGO_SETTINGS_MODULE=projeto_cad_usu.custom_settings.settings-postgres
+```
+em Powershell (Windows)
+```
+set DJANGO_SETTINGS_MODULE=projeto_cad_usu.custom_settings.settings-postgres
+```
+## Docker
+descomente e/ou edite a variavel env do dockerfile

@@ -10,6 +10,7 @@ services:
 
     ngrok:
       image: ngrok/ngrok
+      container_name: ngrok
       command:
         - "start"
         - "--all"
@@ -19,3 +20,25 @@ services:
         - ./ngrok.yml:/etc/ngrok.yml
 
       network_mode: host
+
+      depends_on:
+        - python
+
+    
+          #postgres:
+          #image: postgres:latest
+          #environment:
+          #POSTGRES_USER: projeto
+          #POSTGRES_PASSWORD: teste1234
+          #POSTGRES_DB: projeto
+
+          #network_mode: host 
+
+          #postgres-gui:
+          #image: dpage/pgadmin4
+          #container_name: pgAdmin4
+          #environment:
+          #PGADMIN_DEFAULT_EMAIL: teste@gmail.com
+          #PGADMIN_DEFAULT_PASSWORD: teste1234
+      
+          #network_mode: host
