@@ -6,7 +6,8 @@ WORKDIR /app
 
 COPY . /app
 
-RUN pip install -r requirements.txt --break-system-packages
+RUN pip install -r requirements.txt --break-system-packages && \
+    python manage.py migrate
 
 # RUN pip install -r requirements.txt --break-system-packages \
 #  && python manage.py migrate
