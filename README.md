@@ -5,7 +5,7 @@ Site de cadastro ligado ao banco de dados.
 ## Como usar
 ### Usando Docker
 
-Primero edite o ngrok.yml com seu código de autenticação depois execute
+Primero crie uma conta no site do [ngrok] e edite o ngrok.yml com seu código de autenticação depois execute
 ```
 docker compose up -d
 ```
@@ -46,3 +46,5 @@ set DJANGO_SETTINGS_MODULE=config.custom_settings.settings-postgres
 ### Postgres no Docker
 Descomente a variavel *ENV* do dockerfile e o *RUN* e comente a outra, depois vá no docker-compose.yml e descomente o serviço postgres e edite como conforme desejar.
 Descomente o postgres-gui se quiser usar o pgAdmin4 para configurar/ver as tabelas via interface gráfica
+
+[ngrok]: https://ngrok.com
