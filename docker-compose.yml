@@ -25,12 +25,12 @@ services:
       depends_on:
         - python
 
-    nginx:
-      image: nginx:latest
-      container_name: nginx
+      #nginx:
+      #image: nginx:latest
+      #container_name: nginx
 
-      volumes:
-        - app-volume:/home
+          #volumes:
+          #- app-volume:/home
           #postgres:
           #image: postgres:latest
           #environment:

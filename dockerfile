@@ -12,4 +12,4 @@ RUN pip install -r requirements.txt --break-system-packages
 #  && python manage.py migrate
 
 
-CMD [ "python", "manage.py", "runserver" ]
+CMD ["gunicorn", "projeto_cad_usu.wsgi:application"]
