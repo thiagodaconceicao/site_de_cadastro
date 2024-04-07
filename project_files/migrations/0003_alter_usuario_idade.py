@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('app_cad_usu', '0002_rename_usuarios_usuario'),
+        ('project_files', '0002_rename_usuarios_usuario'),
     ]
 
     operations = [
