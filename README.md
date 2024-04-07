@@ -20,6 +20,10 @@ Instale as dependências do projeto
 ```
 pip install -r requirements.txt
 ```
+crie o SQLite
+```
+python manage.py migrate
+```
 Execute o seguinte comando
 ```
 python manage.py runserver
