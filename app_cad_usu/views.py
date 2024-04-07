@@ -6,7 +6,7 @@ def usuario(request):
     #salvar os dados da tela para o banco de dados
     novo_usuario = Usuario()
     novo_usuario.nome = request.POST.get('nome')
-    novo_usuario.idade = request.POST.get('idade')
+    novo_usuario.senha = request.POST.get('senha')
     novo_usuario.save()
     #Exibir todos os usuairos cadastrado 
     usuarios = {

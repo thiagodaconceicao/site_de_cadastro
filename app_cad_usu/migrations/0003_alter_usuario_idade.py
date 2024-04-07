@@ -12,7 +12,7 @@ class Migration(migrations.Migration):
     operations = [
         migrations.AlterField(
             model_name='usuario',
-            name='idade',
+            name='senha',
             field=models.TextField(max_length=255),
         ),
     ]
