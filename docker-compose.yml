@@ -6,7 +6,8 @@ services:
         context: .
 
       network_mode: host
-
+      volumes:
+      - app-volume:/app
 
     ngrok:
       image: ngrok/ngrok
@@ -24,7 +25,12 @@ services:
       depends_on:
         - python
 
-    
+      #nginx:
+      #image: nginx:latest
+      #container_name: nginx
+
+          #volumes:
+          #- app-volume:/home
           #postgres:
           #image: postgres:latest
           #environment:
@@ -42,3 +48,6 @@ services:
           #PGADMIN_DEFAULT_PASSWORD: teste1234
       
           #network_mode: host
+          #
+volumes:
+  app-volume:

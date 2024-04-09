@@ -1,6 +1,6 @@
 
 from django.urls import path
-from app_cad_usu import views
+from project_files import views
 urlpatterns = [
     #rota,view responsável, nome referencia
     #usuarios.com

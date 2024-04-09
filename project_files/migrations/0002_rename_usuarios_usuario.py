@@ -6,7 +6,7 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('app_cad_usu', '0001_initial'),
+        ('project_files', '0001_initial'),
     ]
 
     operations = [
