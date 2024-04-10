@@ -26,7 +26,7 @@ python manage.py migrate
 ```
 Execute o seguinte comando
 ```
-python manage.py runserver
+gunicorn config.wsgi:application
 ```
 Depois vai no seu navegador e coloque
 ```
