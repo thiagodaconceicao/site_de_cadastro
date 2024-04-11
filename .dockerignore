@@ -2,3 +2,4 @@
 .venv
 .gitignore
 *.sqlite3
+*.md
