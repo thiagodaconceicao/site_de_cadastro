@@ -27,9 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['localhost']
 
-CRFS_TRUSTED_ORIGINS = ['http://localhost:5050', 'http://localhost:8000']
+CRFS_TRUSTED_ORIGINS = ['http://localhost:5050']
 
-CORS_ORIGIN_WHITELIST = ['http://localhost:5050', 'http://localhost:8000']
+CORS_ORIGIN_WHITELIST = ['http://localhost:5050']
 
 # Application definition
 
