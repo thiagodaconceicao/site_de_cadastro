@@ -16,7 +16,11 @@ class selenium_browser_test(LiveServerTestCase):
 
         nome_element = selenium.find_element(By.ID, 'nome')
         senha_element = selenium.find_element(By.ID, 'senha')
+        button_enviar = selenium.find_element(By.ID, 'enviar')
 
         nome_element.send_keys('teste')
         senha_element.send_keys('123456')
+        button_enviar.click()
+
+
          
