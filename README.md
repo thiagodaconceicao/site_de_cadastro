@@ -1,6 +1,5 @@
 # Site de Cadastro de Consumidores
-Site de cadastro ligado ao banco de dados.
-
+Projeto Universitario da Disciplina de banco de dados sobre Site de Cadastro ligado ao banco de dados.
 
 ## Como usar
 ### Usando Docker

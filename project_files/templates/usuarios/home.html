@@ -4,9 +4,9 @@
   {% csrf_token %}
   <div class="container" style="text-align: center;">
       <h1>Cadastro de Usuários</h1>
-      Nome <input name="nome" class="form-control-sm" type="text">
-      Senha <input name="senha" class="form-control-sm" type="text">
-      <button class="form-control-sm">Enviar</button>
+      Nome <input name="nome" class="form-control-sm" id="nome" type="text">
+      Senha <input name="senha" class="form-control-sm" id="senha" type="text">
+      <button id="enviar" class="form-control-sm">Enviar</button>
   </div>
 </form>
 {% endblock %}
