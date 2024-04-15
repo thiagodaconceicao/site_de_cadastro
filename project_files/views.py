@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Usuario
+from django.contrib.auth.hashers import make_password
 def home(request):
     return render(request,"usuarios/home.html")
 def usuario(request):
