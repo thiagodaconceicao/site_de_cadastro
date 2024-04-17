@@ -1,12 +1,39 @@
-{% extends 'usuarios/base.html' %}
-{% block conteudo %}
-<form action="{% url 'listagem_usuarios' %}" method="post">
-  {% csrf_token %}
-  <div class="container" style="text-align: center;">
-      <h1>Cadastro de Usuários</h1>
-      Nome <input name="nome" class="form-control-sm" type="text">
-      Senha <input name="senha" class="form-control-sm" type="text">
-      <button class="form-control-sm">Enviar</button>
-  </div>
-</form>
-{% endblock %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <form action="{% url 'listagem_usuarios' %}" method="post">
+  <div id="login">
+    <div class="caixa">
+
+        <img src="/project_files/templates/usuarios/imagem/imagembd.png">
+        <h1>Login</h1>
+
+        <div class="nome">
+            <input type="text" name="nome" class="form-control-sm" placeholder="Nome">
+        </div>
+        <div class="id">
+            <input type="text" name="id" class="form-control-sm" placeholder="ID">
+        </div>
+        <div class="senha">
+            <input type="text" name="senha" class="form-control-sm" placeholder="Senha">
+        </div>
+        <div class="entrar">
+            <p>Ainda não tem conta? <a href="base.html">Crie uma</a></p>
+            <button class="form-control-sm">Enviar</button>
+        </div>
+    </div>
+</div>
+  
+
+
+  </form>
+</body>
+</html>
+
