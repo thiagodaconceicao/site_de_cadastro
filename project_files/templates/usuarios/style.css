@@ -1,1 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:rgb(181, 181, 218);
+    color: white;
+}
 
+a {
+    text-decoration: none;
+    color: aquamarine;
+}
+#login {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+.name input {
+    border-radius: 15px;
+    border: none;
+    width: 250px;
+    height: 40px;
+    padding-left: 15px;
+    background-color:rgb(24, 57, 70);
+    color: #b6b6b6;
+    margin-bottom: 15px;
+
+}
+.nome input {
+    border-radius: 15px;
+    border: none;
+    width: 250px;
+    height: 40px;
+    padding-left: 15px;
+    background-color:rgb(24, 57, 70);
+    color: #b6b6b6;
+}
+.id input {
+    border-radius: 15px;
+    border: none;
+    width: 250px;
+    height: 40px;
+    padding-left: 15px;
+    background-color:rgb(24, 57, 70);
+    color: #b6b6b6;
+    margin-top: 15px;
+}
+.senha input {
+    border-radius: 15px;
+    border: none;
+    width: 250px;
+    height: 40px;
+    padding-left: 15px;
+    background-color:rgb(24, 57, 70);
+    color: #b6b6b6;
+    margin-top: 15px;
+}
+.entrar input {
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(128, 212, 128);
+}
+input::placeholder {
+    color: #b6b6b6;
+}
+h1 {
+    color: white;
+    font-size: 30px;
+}
+.caixa {
+    margin-top: 65px;
+}
+.caixa img {
+    width: 130px;
+}
+input:focus {
+    outline: none;
+}
