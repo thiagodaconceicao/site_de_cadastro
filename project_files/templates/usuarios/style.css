@@ -35,7 +35,7 @@ a {
     background-color:rgb(24, 57, 70);
     color: #b6b6b6;
 }
-.id input {
+.id_usuario input {
     border-radius: 15px;
     border: none;
     width: 250px;
