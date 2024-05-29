@@ -1,6 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     font-family: Arial, sans-serif;
-    background-color:rgb(181, 181, 218);
+    background-color: rgb(181, 181, 218);
     color: white;
 }
 
@@ -8,74 +13,74 @@ a {
     text-decoration: none;
     color: aquamarine;
 }
-#login {
-    text-align: center;
+
+.conteudo {
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
-    flex-direction: row;
+    height: 100vh;
 }
-.name input {
-    border-radius: 15px;
-    border: none;
-    width: 250px;
-    height: 40px;
-    padding-left: 15px;
-    background-color:rgb(24, 57, 70);
-    color: #b6b6b6;
-    margin-bottom: 15px;
 
+.conteudo-cadastro, .conteudo-login {
+    background-color: rgba(105, 128, 228, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
 }
-.nome input {
+
+.conteudo-home {
+    display: flex;
+    align-items: center;
+}
+
+#imagem1 {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 40px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario div {
+    margin-bottom: 15px;
+}
+
+input {
     border-radius: 15px;
     border: none;
     width: 250px;
     height: 40px;
     padding-left: 15px;
-    background-color:rgb(24, 57, 70);
+    background-color: rgb(24, 57, 70);
     color: #b6b6b6;
 }
-.id_usuario input {
-    border-radius: 15px;
-    border: none;
-    width: 250px;
-    height: 40px;
-    padding-left: 15px;
-    background-color:rgb(24, 57, 70);
+
+input::placeholder {
     color: #b6b6b6;
-    margin-top: 15px;
 }
-.senha input {
-    border-radius: 15px;
-    border: none;
-    width: 250px;
-    height: 40px;
-    padding-left: 15px;
-    background-color:rgb(24, 57, 70);
-    color: #b6b6b6;
-    margin-top: 15px;
-}
-.entrar input {
-    cursor: pointer;
+
+button {
     width: 120px;
     height: 40px;
     border-radius: 20px;
     border: none;
     background-color: rgb(128, 212, 128);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-input::placeholder {
-    color: #b6b6b6;
+
+button:hover {
+    background-color: rgb(100, 200, 100);
 }
-h1 {
+
+#titulo, h1 {
     color: white;
     font-size: 30px;
-}
-.caixa {
-    margin-top: 65px;
-}
-.caixa img {
-    width: 130px;
-}
-input:focus {
-    outline: none;
+    margin-bottom: 20px;
 }
