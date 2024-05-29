@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <form action="{% url 'listagem_usuarios' %}" method="post">
+    <section class="conteudo">
+      <div class="conteudo-login">
+        <h1>Login</h1>
+        <div class="conteudo-home">
+          <img src="/project_files/templates/usuarios/imagem/imagembd.png" id="imagem1" alt="Imagem de login">
+          <div class="formulario">
+            <div class="nome">
+              <input type="text" name="nome" class="form-control-sm" placeholder="Nome" required>
+            </div>
+            <div class="id_usuario">
+              <input type="text" name="id" class="form-control-sm" placeholder="ID" required>
+            </div>
+            <div class="senha">
+              <input type="password" name="senha" class="form-control-sm" placeholder="Senha" required>
+            </div>
+            <div class="entrar">
+              <p>Ainda não tem conta? <a href="cadastro.html">Crie uma</a></p>
+              <button type="submit" class="btn btn-success">Entrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </form>
+
+</body>
+</html>
